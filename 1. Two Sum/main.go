@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func twoSum(nums []int, target int) []int {
 	for i := 0; i < len(nums)-1; i++ {
