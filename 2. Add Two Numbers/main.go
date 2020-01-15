@@ -49,17 +49,21 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func main() {
-	a1 := ListNode{2, nil}
+
+	a0 := ListNode{5, nil}
+	a1 := ListNode{2, &a0}
 	a2 := ListNode{4, &a1}
 	a3 := ListNode{3, &a2}
 
-	a3.print()
+	// a3.print()
+
+	// 3 4 2 5 + 6 5 0 0
 
 	b1 := ListNode{5, nil}
-	b2 := ListNode{6, &b1}
-	b3 := ListNode{4, &b2}
+	// b2 := ListNode{6, &b1}
+	// b3 := ListNode{4, &b2}
 
-	c := addTwoNumbers(&a3, &b3)
+	c := addTwoNumbers(&a3, &b1)
 	c.print()
 }
 
